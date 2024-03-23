@@ -1,6 +1,7 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
 const car = document.getElementById("img");
+const player = document.getElementById("aita");
 
 // img = new Image();
 // img.src = 'f1car.png';
@@ -12,7 +13,6 @@ const car = document.getElementById("img");
 // let vector = 0;
 const size = 30;
 const parkingsize = 20;
-let select = false;
 
 function update()
 {
@@ -21,22 +21,14 @@ function update()
 		// x += magnitude;
 		// y += magnitude * Math.cos(vector);
 		// x += magnitude * Math.sin(vector);
-    if(select)
-    {
-        if(canvas.width * .86 + parkingsize/2 > car.x && canvas.width * .86 + parkingsize/2 < car.x + size && car.y < 20)
-            window.location.href = "Connections_Dupe/connectionsIndex.html";
-        if(canvas.width * .66 + parkingsize/2 > car.x && canvas.width * .66 + parkingsize/2 < car.x + size && car.y < 20)
-            window.location.href = "TypeRacer/typeRacerIndex.html";
-        if(canvas.width * .46 + parkingsize/2 > car.x && canvas.width * .46 + parkingsize/2 < car.x + size && car.y < 20)
-            window.location.href = "Dinosaur/dino-game/dinosaurIndex.html";
-        if(canvas.width * .06 + parkingsize/2 > car.x && canvas.width * .06 + parkingsize/2 < car.x + size && car.y < 20)
-            window.location.href = "index.html";
-    }
-    
+
+    ctx.fillStyle="rgba(255,255,255)";
     ctx.fillText("Paddock", canvas.width * .05, 10)
     ctx.fillText("Connections", canvas.width * .797, 10)
     ctx.fillText("TypeRacer", canvas.width * .618, 10)  
     ctx.fillText("Dinosaur", canvas.width * .438, 10)
+    ctx.fillText("Connect Four", canvas.width * .2201, 10)
+    ctx.fillRect(canvas.width * .86, 20,parkingsize, parkingsize)
     // car.drawImage(img, x, y, 50, 60);
     // ca.rotate(rotation);
     // requestAnimationFrame(update)

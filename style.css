@@ -20,10 +20,13 @@
     width: 100%;
     height: 100%;
     /* Add your background pattern here */
-    background-color: #313131;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
-    background-size: 30px 30px;
-    background-position: -5px -5px
+    /* background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0); */
+		background-image: url("josh_hutcherson_whistlelithograph.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* pointer-events: none; */
   }
 
   .parkinglot{
@@ -33,7 +36,7 @@
     margin-left: 20vw;
     margin-top: 10vh;
     background-color: white;
-		background-image: url("parkinglot.png");
+		background-image: url("hamsterlot.png");
     background-size: 100% 100%;
   }
   
@@ -41,8 +44,20 @@
     position: absolute;
     top: -10vh;
     left: 15vw;
-    transform: scale(.4);
+    transform: scale(0.01);
     z-index: 1;
     outline: 2px solid blue;
   border: 1px solid white;
+  }
+
+  .subway{
+    position: absolute;
+    margin-left: 20vw;
+    margin-top: -70vh;
+    opacity: .02;
+  }
+
+  .aita{
+    position: absolute;
+    margin-left: 20vw;
   }

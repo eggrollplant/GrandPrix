@@ -24,14 +24,14 @@ export default class Player {
 
     this.standingStillImage = new Image();
     // this.standingStillImage.src = "images/standing_still.png";
-		this.standingStillImage.src = "../../f1car.png";
+		this.standingStillImage.src = "../f1car.png";
     this.image = this.standingStillImage;
 
     const dinoRunImage1 = new Image();
-    dinoRunImage1.src = "../../f1car.png";
+    dinoRunImage1.src = "../f1car.png";
 
     const dinoRunImage2 = new Image();
-    dinoRunImage2.src = "../../f1car.png";
+    dinoRunImage2.src = "../f1car.png";
 
     this.dinoRunImages.push(dinoRunImage1);
     this.dinoRunImages.push(dinoRunImage2);

@@ -20,9 +20,12 @@ const GROUND_HEIGHT = 24;
 const GROUND_AND_CACTUS_SPEED = 0.5;
 
 const CACTI_CONFIG = [
-  { width: 48 / 1.5, height: 100 / 1.5, image: "images/cactus_1.png" },
-  { width: 98 / 1.5, height: 100 / 1.5, image: "images/cactus_2.png" },
-  { width: 68 / 1.5, height: 70 / 1.5, image: "images/cactus_3.png" },
+  // { width: 48 / 1.5, height: 100 / 1.5, image: "images/cactus_1.png" },
+  // { width: 98 / 1.5, height: 100 / 1.5, image: "images/cactus_2.png" },
+  // { width: 68 / 1.5, height: 70 / 1.5, image: "images/cactus_3.png" },
+	{ width: 48 / 1.5, height: 100 / 1.5, image: "../hampsters/h0.jpg" },
+  { width: 98 / 1.5, height: 100 / 1.5, image: "../hampsters/h6.jpg" },
+  { width: 68 / 1.5, height: 70 / 1.5, image: "../hampsters/h8.jpg" },
 ];
 
 //Game Objects
@@ -121,7 +124,7 @@ function getScaleRatio() {
 function showGameOver() {
   const fontSize = 70 * scaleRatio;
   ctx.font = `${fontSize}px Verdana`;
-  ctx.fillStyle = "grey";
+  ctx.fillStyle = "RED";
   const x = canvas.width / 4.5;
   const y = canvas.height / 2;
   ctx.fillText("GAME OVER", x, y);

@@ -2,8 +2,8 @@ export default class Ground {
   constructor(ctx, width, height, speed, scaleRatio) {
     this.ctx = ctx;
     this.canvas = ctx.canvas;
-    this.width = width;
-    this.height = height;
+    this.width = width / 1;
+    this.height = height + 420;
     this.speed = speed;
     this.scaleRatio = scaleRatio;
 
@@ -11,7 +11,7 @@ export default class Ground {
     this.y = this.canvas.height - this.height;
 
     this.groundImage = new Image();
-    this.groundImage.src = "images/ground.png";
+    this.groundImage.src = "images/racetrack (1).png";
   }
 
   update(gameSpeed, frameTimeDelta) {
@@ -22,7 +22,7 @@ export default class Ground {
     this.ctx.drawImage(
       this.groundImage,
       this.x,
-      this.y,
+      /* this.y */ 0,
       this.width,
       this.height
     );

@@ -2,7 +2,8 @@ console.log("TESTING")
 
 const canvas = document.getElementById("canvas")
 const ctx = canvas.getContext('2d')
-const gameOne = canvas.getContext('2d')
+const connections = canvas.getContext('2d')
+const typeRacer = canvas.getContext('2d')
 
 let x = 5;
 let y = 5;
@@ -27,9 +28,12 @@ function update()
     if(select)
     {
         if(canvas.width - size + 5 > x && canvas.width - size + 5 < x + size && y < 20)
-            window.location.href = "connectionsIndex.html";
+            window.location.href = "Connections_Dupe/connectionsIndex.html";
+        if(canvas.width - (size * 3) + 5 > x && canvas.width - (size * 3) + 5 < x + size && y < 20)
+            window.location.href = "TypeRacer/typeRacerIndex.html";
     }
-    gameOne.fillRect(canvas.width - size, 10,10,10)
+    connections.fillRect(canvas.width - size, 10,10,10)
+    typeRacer.fillRect(canvas.width - (size * 3), 10,10,10)
     ctx.fillRect(x,y, size, size)   
     requestAnimationFrame(update)
 }

@@ -1,4 +1,4 @@
-  .navbar {
+.navbar {
     margin: -.5vw;
     overflow: hidden;
     background-color: white;
@@ -78,10 +78,18 @@
     background-position: -5px -5px
   }
 
-  .parkinglot{
+  .parkinglot {
     width: 60vw;
     height: 60vh;
     background-color: white;
     margin-left: 20vw;
     margin-top: 20vh;
+  }
+
+  .track-container {
+    width: 50vw;
+    height: 40vh;
+    background-color: white;
+    margin-left: 25vw;
+    margin-top: 15vh;
   }

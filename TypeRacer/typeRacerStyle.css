@@ -78,18 +78,38 @@
     background-position: -5px -5px
   }
 
-  .parkinglot {
-    width: 60vw;
-    height: 60vh;
-    background-color: white;
-    margin-left: 20vw;
-    margin-top: 20vh;
-  }
-
   .track-container {
     width: 50vw;
     height: 40vh;
     background-color: white;
     margin-left: 25vw;
     margin-top: 15vh;
+  }
+
+  .type-container {
+    width: 50vw;
+    height: 10vh;
+    background-color: white;
+    margin-left: 25vw;
+    margin-top: 5vh;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+    border-width: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .dynamic-placeholder {
+    vertical-align: center;
+    height: 50px;
+    width: 50%;
+    font-size: 30px;
+    background: #000;
+    border-radius: 5px;
+    border: none; 
+    margin: 50px auto;
+    padding: 10px;
+    color: #fff;
+    outline: none !important;
   }

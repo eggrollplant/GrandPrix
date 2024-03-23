@@ -1,40 +1,44 @@
-console.log("TESTING")
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext('2d');
+const car = document.getElementById("img");
 
-const canvas = document.getElementById("canvas")
-const ctx = canvas.getContext('2d')
-const connections = canvas.getContext('2d')
-const typeRacer = canvas.getContext('2d')
+// img = new Image();
+// img.src = 'f1car.png';
 
-let x = 5;
-let y = 5;
-let vxl = 0;
-let vxr = 0;
-let vyu = 0;
-let vyd = 0;
-let size = 20;
+// let rotation = 0;
+// let x = canvas.width * .04;
+// let y = 5;
+// let magnitude = 0;
+// let vector = 0;
+const size = 30;
+const parkingsize = 20;
 let select = false;
 
 function update()
 {
     ctx.clearRect(0,0, canvas.width, canvas.height)
-    if(x + size < canvas.width - 5)
-        x += vxr;
-    if(x >= 10)
-        x += vxl;
-    if(y + size < canvas.height - 5)
-        y += vyd;
-    if(y >= 10)
-        y += vyu;
+		// y += magnitude;
+		// x += magnitude;
+		// y += magnitude * Math.cos(vector);
+		// x += magnitude * Math.sin(vector);
     if(select)
     {
-        if(canvas.width - size + 5 > x && canvas.width - size + 5 < x + size && y < 20)
+        if(canvas.width * .86 + parkingsize/2 > car.x && canvas.width * .86 + parkingsize/2 < car.x + size && car.y < 20)
             window.location.href = "Connections_Dupe/connectionsIndex.html";
-        if(canvas.width - (size * 3) + 5 > x && canvas.width - (size * 3) + 5 < x + size && y < 20)
+        if(canvas.width * .66 + parkingsize/2 > car.x && canvas.width * .66 + parkingsize/2 < car.x + size && car.y < 20)
             window.location.href = "TypeRacer/typeRacerIndex.html";
+        if(canvas.width * .46 + parkingsize/2 > car.x && canvas.width * .46 + parkingsize/2 < car.x + size && car.y < 20)
+            window.location.href = "Dinosaur/dino-game/dinosaurIndex.html";
+        if(canvas.width * .06 + parkingsize/2 > car.x && canvas.width * .06 + parkingsize/2 < car.x + size && car.y < 20)
+            window.location.href = "index.html";
     }
-    connections.fillRect(canvas.width - size, 10,10,10)
-    typeRacer.fillRect(canvas.width - (size * 3), 10,10,10)
-    ctx.fillRect(x,y, size, size)   
-    requestAnimationFrame(update)
+    
+    ctx.fillText("Paddock", canvas.width * .05, 10)
+    ctx.fillText("Connections", canvas.width * .797, 10)
+    ctx.fillText("TypeRacer", canvas.width * .618, 10)  
+    ctx.fillText("Dinosaur", canvas.width * .438, 10)
+    // car.drawImage(img, x, y, 50, 60);
+    // ca.rotate(rotation);
+    // requestAnimationFrame(update)
 }
 update()

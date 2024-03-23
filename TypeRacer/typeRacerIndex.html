@@ -22,10 +22,25 @@
         </div>
       </div>
       <script src="TypeRaceScript.js"></script>
-    <div class="game-container">
+    <div class="game-container" id="container">
       <div class="track-container" id="track">
           <!---->
       </div>
+      <input class="type-container" type="text" id="type" name="type" placeholder="Enter Here:">
+      </div>
+      <input type="text" id="dynamic-placeholder"  />
+      <script>
+        window.onload = function() {
+          var sp = new SuperPlaceholder({
+            placeholders: ["john.doe@gmail.com", "foo@bar.com"],
+            preText: "Eg. ",
+            stay: 1000,
+            speed: 100,
+            element: '#dynamic-placeholder'
+          });
+          sp.init();
+        }
+      </script>
     </div>
 </body>
 <script src="TypeRaceScript.js"></script>

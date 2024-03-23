@@ -99,7 +99,7 @@
   display: block;
 }
 
-.grid_button {
+.grid_button{
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -138,7 +138,6 @@
 grid_button:hover::before {
   width: 250%;
 }
-
 
 .open-sans-font {
   font-family: "Open Sans", sans-serif;

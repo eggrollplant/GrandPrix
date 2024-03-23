@@ -1,5 +1,6 @@
 var dictionary = ["this", "is", "just", "a", "test"];
 var word = "a";
+var pen = document.getElementById("track").getContext('2d');
 
 fetch("dictionary.txt")
   .then((res) => res.text())
@@ -33,3 +34,6 @@ function start() {
   this.document.getElementById("type").setAttribute("placeholder", word);
   this.document.getElementById("type").focus();
 }
+
+pen.fillStyle="rgba(255,255,255)";
+pen.fillRect(100, 100, 100, 100);

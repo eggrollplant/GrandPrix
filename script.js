@@ -12,7 +12,7 @@ const player = document.getElementById("aita");
 // let magnitude = 0;
 // let vector = 0;
 const size = 30;
-const parkingsize = 20;
+const parkingsize = canvas.width *.2;
 
 function update()
 {
@@ -28,7 +28,6 @@ function update()
     ctx.fillText("TypeRacer", canvas.width * .618, 10)  
     ctx.fillText("Dinosaur", canvas.width * .438, 10)
     ctx.fillText("Connect Four", canvas.width * .2201, 10)
-    ctx.fillRect(canvas.width * .86, 20,parkingsize, parkingsize)
     // car.drawImage(img, x, y, 50, 60);
     // ca.rotate(rotation);
     // requestAnimationFrame(update)

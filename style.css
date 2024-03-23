@@ -42,22 +42,26 @@
   
   .img-container img {
     position: absolute;
-    top: -10vh;
-    left: 15vw;
-    transform: scale(0.01);
+    /*top: -10vh;
+    left: 15vw;*/
+    top: 20vw;
+    left: 50vh;
+    transform: scale(.3);
     z-index: 1;
     outline: 2px solid blue;
-  border: 1px solid white;
+    border: 1px solid white;
+    width: 20vw;
+    height: 50vh;
   }
 
-  .subway{
+  .subway {
     position: absolute;
     margin-left: 20vw;
     margin-top: -70vh;
     opacity: .02;
   }
 
-  .aita{
+  .aita {
     position: absolute;
     margin-left: 20vw;
   }

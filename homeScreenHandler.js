@@ -37,8 +37,7 @@ document.addEventListener('keydown', function(e)
     
 	if(e.code == "Space")
 	{
-		//if (screen.width * .716)
-        /*if(screen.width * .2 + screen.width * .516 + parkingsize/2 > img.getBoundingClientRect().left && 
+        if(screen.width * .2 + screen.width * .516 + parkingsize/2 > img.getBoundingClientRect().left && 
 			screen.width * .2 + screen.width * .516 + parkingsize/2 < screen.width * .2 + img.getBoundingClientRect().left + size && 
 			screen.height * .1 < img.getBoundingClientRect().top && 
 			screen.height * .1 + screen.height * .063 > img.getBoundingClientRect().top)
@@ -62,7 +61,7 @@ document.addEventListener('keydown', function(e)
 			screen.width * .2 + screen.width * .036 + parkingsize/2 < screen.width * .2 + img.getBoundingClientRect().left + size && 
 			screen.height * .1 < img.getBoundingClientRect().top && 
 			screen.height * .1 + screen.height * .063 > img.getBoundingClientRect().top)
-            window.location.href = "index.html";*/
+            window.location.href = "index.html";
 	}
 });
 
